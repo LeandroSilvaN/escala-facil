@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <title>EscalaFácil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/storage.js"></script>
+    <script src="js/theme.js"></script>
+</head>
+<body class="splash-page">
+    <main class="splash">
+        <div class="brand-mark">EF</div>
+        <h1>EscalaFácil</h1>
+        <p>Carregando o sistema acadêmico de escalas...</p>
+    </main>
+
+    <script>
+        const session = getUsuarioLogado();
+        window.location.replace(session ? 'dashboard.html' : 'login.html');
+    </script>
+</body>
+</html>

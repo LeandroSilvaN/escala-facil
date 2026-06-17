@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <title>Cadastro | EscalaFácil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/storage.js"></script>
+    <script src="js/theme.js"></script>
+</head>
+<body class="auth-page">
+    <main class="auth-shell">
+        <section class="auth-info">
+            <div class="brand">
+                <span class="brand-icon"><i class="fa-solid fa-calendar-check"></i></span>
+                <span>EscalaFácil</span>
+            </div>
+            <h1>Crie sua conta e comece a modelar compatibilidades.</h1>
+            <p>Os dados ficam salvos no LocalStorage do navegador, sem servidor e prontos para GitHub Pages.</p>
+        </section>
+
+        <section class="auth-card">
+            <h2>Cadastro</h2>
+            <p class="muted">Informe seus dados para entrar no sistema.</p>
+            <form id="registerForm" novalidate>
+                <label for="registerName">Nome</label>
+                <div class="input-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="registerName" placeholder="Seu nome" required>
+                </div>
+
+                <label for="registerEmail">E-mail</label>
+                <div class="input-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="registerEmail" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <label for="registerPassword">Senha</label>
+                <div class="input-icon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="registerPassword" placeholder="Mínimo 6 caracteres" required>
+                </div>
+
+                <label for="confirmPassword">Confirmar senha</label>
+                <div class="input-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <input type="password" id="confirmPassword" placeholder="Repita a senha" required>
+                </div>
+
+                <p class="form-message" id="registerMessage"></p>
+                <button class="btn btn-primary" type="submit"><i class="fa-solid fa-user-plus"></i>Criar conta</button>
+            </form>
+            <p class="auth-link">Já possui conta? <a href="login.html">Entrar</a></p>
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
