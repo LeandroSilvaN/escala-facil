@@ -56,5 +56,3 @@ Consulte o manual completo:
 Projeto desenvolvido para fins acadêmicos na Fatec.
 
 - Leandro Silva
-- Raphael
-- Guilherme
