@@ -90,3 +90,16 @@ emailjs.send(
 window.renderSuggestions = renderSuggestions;
 window.deleteSuggestion = deleteSuggestion;
 document.addEventListener('DOMContentLoaded', setupSuggestions);
+
+const lastSend = localStorage.getItem('lastSuggestion');
+
+if (lastSend) {
+    const diff = Date.now() - Number(lastSend);
+
+    if (diff < 60000) {
+        message.textContent = 'Aguarde 1 minuto para enviar outra sugestão.';
+        return;
+    }
+}
+
+localStorage.setItem('lastSuggestion', Date.now());
